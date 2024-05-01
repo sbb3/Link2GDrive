@@ -1,0 +1,48 @@
+.clouds {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  // background: #8ed9ff;
+
+  .cloud__bg__svg {
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+  }
+}
+
+.cloud_0 {
+  animation: toright 40s infinite linear;
+  fill: white;
+}
+
+.cloud_1 {
+  animation: toright 30s infinite linear;
+  fill: white;
+}
+
+.cloud_2 {
+  animation: toright 20s infinite linear;
+  fill: white;
+}
+
+.cloud_3 {
+  animation: toright 10s infinite linear;
+  fill: white;
+}
+
+@keyframes toright {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+}
